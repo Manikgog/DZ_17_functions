@@ -64,64 +64,64 @@ int main() {
 	SetConsoleCP(1251);
 	srand(time(NULL));
 
-	// Задача 1.
+	// Exercise 1.
 	/*
-		Создайте функцию mean, которая возвращает
-	среднее арифметическое двух переданных в неё чисел.
-	Не забудьте продемонстрировать её работу, вызвав
-	функцию в блоке main.
+		Create a mean function that returns
+	the arithmetic mean of the two numbers passed to it.
+	Don't forget to demonstrate its work by calling
+	the function in the main block.
 	*/
-	std::cout << "Задача 1.\nПрограмма для нахождения среднего арифметического двух чисел.\nВведите два числа: ";
+	std::cout << "Exercise 1.\nA program for finding the arithmetic mean of two numbers.\nEnter two numbers:";
 	double num1, num2;
 	std::cin >> num1 >> num2;
-	std::cout << "Среднее арифметическое чисел " << num1 << " и " << num2 << " равно " << mean(num1, num2) << ".\n\n\n";
+	std::cout << "Arithmetic mean of numbers " << num1 << " and " << num2 << " equally " << mean(num1, num2) << ".\n\n\n";
 
-	// Задача 2.
+	// Exercise 2.
 	/*
-		Создайте функцию mean_arr. Она принимает
-	массив и его длину, после чего возвращает среднее
-	арифметическое всех его элементов.
+		Create the mean_arr function. It takes
+	an array and its length, and then returns
+	the arithmetic mean of all its elements.
 	*/
-	std::cout << "Задача 2.\nПрограмма для нахождения среднего арифметического элементов массива.\n";
+	std::cout << "Exercise 2.\nA program for finding the arithmetic mean of array elements.\n";
 	int low = 0, hi = 10;
 	const int size = 10;
 	int arr[size];
 	fill_arr(arr, size, low, hi);
-	std::cout << "Среднее арифметическое массива:\n";
+	std::cout << "The arithmetic mean of the array:\n";
 	print_arr(arr, size);
-	std::cout << "равно " << mean_arr(arr, size) << ".\n\n\n";
+	std::cout << "equally " << mean_arr(arr, size) << ".\n\n\n";
 
-	// Задача 3.
+	// Exercise 3.
 	/*
-		Создайте функцию powers(N, M), которая
-	принимает два числовых значения. Функция должна
-	выводить в консоль все степени числа N от степени 0 до
-	степени M включительно.
+		Create a powers(N, M) function that
+	takes two numeric values. The function should
+	output to the console all powers of the number 
+	N from degree 0 to degree M inclusive.
 	*/
 	int N, M;
-	std::cout << "Задача 3.\nПрограмма для вывода степеней числа.\nВведите число -> ";
+	std::cout << "Exercise 3.\nA program for displaying the powers of a number.\nEnter number -> ";
 	std::cin >> N;
-	std::cout << "Введите степень для возведения введённого числа -> ";
+	std::cout << "Enter the degree to raise the entered number -> ";
 	std::cin >> M;
 	powers(N, M);
 	std::cout << "\n\n\n";
 
-	// Задача 4.
+	// Exercise 4.
 	/*
-		Создайте функцию positive_arr, которая принимает
-	массив и его длину, после чего меняет в нём все 
-	отрицательные значения на положительные. Сами
-	положительные числа никак меняться не должны
+		Create a positive_art function that takes
+	an array and its length, and then changes everything in it
+	negative values are replaced by positive ones. The
+	positive numbers themselves should not change in any way.
 	*/
-	std::cout << "Задача 4.\nПрограмма для замены отрицательных чисел в массиве на положительные.\n";
+	std::cout << "Exercise 4.\nA program for replacing negative numbers in an array with positive ones.\n";
 	low = -10; hi = 10;
 	const int size1 = 10;
 	int arr1[size1];
 	fill_arr(arr1, size1, low, hi);
-	std::cout << "Начальный массив:\n";
+	std::cout << "Initial array:\n";
 	print_arr(arr1, size1);
 	positive_arr(arr1, size1);
-	std::cout << "Конечный массив:\n";
+	std::cout << "The final array:\n";
 	print_arr(arr1, size1);
 	std::cout << "\n\n\n";
 
